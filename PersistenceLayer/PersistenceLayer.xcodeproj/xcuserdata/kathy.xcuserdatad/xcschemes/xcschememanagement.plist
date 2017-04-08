@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PersistenceLayerTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>440D53A31E9888AC005AC9DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>44DB82F51E967FC200CB1A50</key>
 		<dict>
 			<key>primary</key>

@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <sqlite3.h>
 
 @interface PersistenceLayer : NSObject
 
--(void)print;
+-(NSString *)print;
+-(NSString *)createTable;
 
 @end
