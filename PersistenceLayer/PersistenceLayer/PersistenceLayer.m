@@ -22,7 +22,6 @@
     int status=sqlite3_open(filename.UTF8String, &test);
     
     if(status == SQLITE_OK){//枚举值SQLITE_OK，代表成功的状态
-        NSLog(@"打开数据库成功");
         char *errorMsg;
         const char *createsql = "create table IF NOT exists info(id integer primary key, inf integer);";
         if ( sqlite3_exec(test, createsql, NULL, NULL, &errorMsg) != SQLITE_OK ) {
