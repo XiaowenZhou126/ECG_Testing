@@ -25,11 +25,9 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
@@ -51,9 +49,9 @@
 }
 
 -(void)tECGDates{
-    NSLog(@"1");
-    NSString *tableName = @"xx";
     ECGDatesDAO *ECGDates = [ECGDatesDAO sharedManager];
+    NSString *tableName = @"xx";
+
     XCTAssertEqual(1, [ECGDates createTable:tableName]);
     
     ECGData *model = [[ECGData alloc] init];
@@ -72,8 +70,8 @@
 }
 
 -(void)tAgeRange{
-    NSLog(@"2");
     AgeRangeDAO *aRange = [AgeRangeDAO sharedManager];
+    
     AgeRange *model = [[AgeRange alloc] init];
     model.dataOfECG = @"80以下";
     model.sex = @"女";
@@ -85,7 +83,6 @@
 }
 
 -(void)tPersionInfo{
-    NSLog(@"3");
     PersionInfoDAO *pInfo = [PersionInfoDAO sharedManager];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -119,7 +116,6 @@
 }
 
 -(void)tAgeTable{
-    NSLog(@"4");
     AgeTableDAO *aTable = [AgeTableDAO sharedManager];
 
     AgeTable *model1 = [[AgeTable alloc] init];
