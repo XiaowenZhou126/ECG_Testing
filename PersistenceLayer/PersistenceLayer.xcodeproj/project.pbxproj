@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4405A20D1E9BC13600D1C101 /* AgeRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4405A20B1E9BC13600D1C101 /* AgeRange.h */; };
+		4405A20D1E9BC13600D1C101 /* AgeRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4405A20B1E9BC13600D1C101 /* AgeRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4405A20E1E9BC13600D1C101 /* AgeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4405A20C1E9BC13600D1C101 /* AgeRange.m */; };
-		4405A2111E9BC1BE00D1C101 /* AgeRangeDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4405A20F1E9BC1BE00D1C101 /* AgeRangeDAO.h */; };
+		4405A2111E9BC1BE00D1C101 /* AgeRangeDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4405A20F1E9BC1BE00D1C101 /* AgeRangeDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4405A2121E9BC1BE00D1C101 /* AgeRangeDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4405A2101E9BC1BE00D1C101 /* AgeRangeDAO.m */; };
 		440D53A71E9888AC005AC9DA /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D53A61E9888AC005AC9DA /* PersistenceLayerTests.m */; };
 		440D53A91E9888AC005AC9DA /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44DB82F61E967FC200CB1A50 /* libPersistenceLayer.a */; };
-		440D53B91E98A60C005AC9DA /* AgeTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53B71E98A60C005AC9DA /* AgeTable.h */; };
+		440D53B91E98A60C005AC9DA /* AgeTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53B71E98A60C005AC9DA /* AgeTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		440D53BA1E98A60C005AC9DA /* AgeTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D53B81E98A60C005AC9DA /* AgeTable.m */; };
 		440D53C11E98A713005AC9DA /* AgeTableDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53BF1E98A713005AC9DA /* AgeTableDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		440D53C21E98A713005AC9DA /* AgeTableDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D53C01E98A713005AC9DA /* AgeTableDAO.m */; };
-		440D53C51E98D121005AC9DA /* PersionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53C31E98D121005AC9DA /* PersionInfo.h */; };
+		440D53C51E98D121005AC9DA /* PersionInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53C31E98D121005AC9DA /* PersionInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		440D53C61E98D121005AC9DA /* PersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D53C41E98D121005AC9DA /* PersionInfo.m */; };
-		440D53C91E98DDA8005AC9DA /* PersionInfoDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53C71E98DDA8005AC9DA /* PersionInfoDAO.h */; };
+		440D53C91E98DDA8005AC9DA /* PersionInfoDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 440D53C71E98DDA8005AC9DA /* PersionInfoDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		440D53CA1E98DDA8005AC9DA /* PersionInfoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 440D53C81E98DDA8005AC9DA /* PersionInfoDAO.m */; };
-		4416C6901E9BE79D00E3BD80 /* ECGDatesDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4416C68E1E9BE79D00E3BD80 /* ECGDatesDAO.h */; };
+		4416C6901E9BE79D00E3BD80 /* ECGDatesDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4416C68E1E9BE79D00E3BD80 /* ECGDatesDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4416C6911E9BE79D00E3BD80 /* ECGDatesDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4416C68F1E9BE79D00E3BD80 /* ECGDatesDAO.m */; };
-		4416C6941E9BE8F300E3BD80 /* ECGData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4416C6921E9BE8F300E3BD80 /* ECGData.h */; };
+		4416C6941E9BE8F300E3BD80 /* ECGData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4416C6921E9BE8F300E3BD80 /* ECGData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4416C6951E9BE8F300E3BD80 /* ECGData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4416C6931E9BE8F300E3BD80 /* ECGData.m */; };
 		44DB82FB1E967FC200CB1A50 /* PersistenceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DB82FA1E967FC200CB1A50 /* PersistenceLayer.m */; };
 		44DB82FC1E967FC200CB1A50 /* PersistenceLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44DB82F91E967FC200CB1A50 /* PersistenceLayer.h */; };
@@ -166,13 +166,13 @@
 			files = (
 				4416C6901E9BE79D00E3BD80 /* ECGDatesDAO.h in Headers */,
 				4416C6941E9BE8F300E3BD80 /* ECGData.h in Headers */,
-				440D53C11E98A713005AC9DA /* AgeTableDAO.h in Headers */,
 				440D53C91E98DDA8005AC9DA /* PersionInfoDAO.h in Headers */,
 				440D53B91E98A60C005AC9DA /* AgeTable.h in Headers */,
-				44DB83031E96806000CB1A50 /* PersistenceLayer.h in Headers */,
 				4405A2111E9BC1BE00D1C101 /* AgeRangeDAO.h in Headers */,
 				4405A20D1E9BC13600D1C101 /* AgeRange.h in Headers */,
 				440D53C51E98D121005AC9DA /* PersionInfo.h in Headers */,
+				440D53C11E98A713005AC9DA /* AgeTableDAO.h in Headers */,
+				44DB83031E96806000CB1A50 /* PersistenceLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

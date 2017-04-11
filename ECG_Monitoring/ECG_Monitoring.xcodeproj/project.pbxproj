@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440C06711E9CB42900CD4FDF /* monitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440C066F1E9CB42900CD4FDF /* monitorViewController.m */; };
+		440C06721E9CB42900CD4FDF /* monitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C06701E9CB42900CD4FDF /* monitorViewController.xib */; };
+		440C06761E9CB46800CD4FDF /* suggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440C06741E9CB46800CD4FDF /* suggestViewController.m */; };
+		440C06771E9CB46800CD4FDF /* suggestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C06751E9CB46800CD4FDF /* suggestViewController.xib */; };
+		440C067B1E9CB4A500CD4FDF /* persionCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 440C06791E9CB4A500CD4FDF /* persionCenterViewController.m */; };
+		440C067C1E9CB4A500CD4FDF /* persionCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440C067A1E9CB4A500CD4FDF /* persionCenterViewController.xib */; };
 		44DB83781E96864700CB1A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DB83771E96864700CB1A50 /* main.m */; };
 		44DB837B1E96864700CB1A50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DB837A1E96864700CB1A50 /* AppDelegate.m */; };
 		44DB837E1E96864700CB1A50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DB837D1E96864700CB1A50 /* ViewController.m */; };
@@ -18,6 +24,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440C066E1E9CB42900CD4FDF /* monitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monitorViewController.h; sourceTree = "<group>"; };
+		440C066F1E9CB42900CD4FDF /* monitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = monitorViewController.m; sourceTree = "<group>"; };
+		440C06701E9CB42900CD4FDF /* monitorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = monitorViewController.xib; sourceTree = "<group>"; };
+		440C06731E9CB46800CD4FDF /* suggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = suggestViewController.h; sourceTree = "<group>"; };
+		440C06741E9CB46800CD4FDF /* suggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = suggestViewController.m; sourceTree = "<group>"; };
+		440C06751E9CB46800CD4FDF /* suggestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = suggestViewController.xib; sourceTree = "<group>"; };
+		440C06781E9CB4A500CD4FDF /* persionCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = persionCenterViewController.h; sourceTree = "<group>"; };
+		440C06791E9CB4A500CD4FDF /* persionCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = persionCenterViewController.m; sourceTree = "<group>"; };
+		440C067A1E9CB4A500CD4FDF /* persionCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = persionCenterViewController.xib; sourceTree = "<group>"; };
 		44DB83731E96864700CB1A50 /* ECG_Monitoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECG_Monitoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44DB83771E96864700CB1A50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44DB83791E96864700CB1A50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +89,15 @@
 				44DB83841E96864700CB1A50 /* LaunchScreen.storyboard */,
 				44DB83871E96864700CB1A50 /* Info.plist */,
 				44DB83761E96864700CB1A50 /* Supporting Files */,
+				440C066E1E9CB42900CD4FDF /* monitorViewController.h */,
+				440C066F1E9CB42900CD4FDF /* monitorViewController.m */,
+				440C06701E9CB42900CD4FDF /* monitorViewController.xib */,
+				440C06731E9CB46800CD4FDF /* suggestViewController.h */,
+				440C06741E9CB46800CD4FDF /* suggestViewController.m */,
+				440C06751E9CB46800CD4FDF /* suggestViewController.xib */,
+				440C06781E9CB4A500CD4FDF /* persionCenterViewController.h */,
+				440C06791E9CB4A500CD4FDF /* persionCenterViewController.m */,
+				440C067A1E9CB4A500CD4FDF /* persionCenterViewController.xib */,
 			);
 			path = ECG_Monitoring;
 			sourceTree = "<group>";
@@ -153,7 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440C067C1E9CB4A500CD4FDF /* persionCenterViewController.xib in Resources */,
 				44DB83861E96864700CB1A50 /* LaunchScreen.storyboard in Resources */,
+				440C06721E9CB42900CD4FDF /* monitorViewController.xib in Resources */,
+				440C06771E9CB46800CD4FDF /* suggestViewController.xib in Resources */,
 				44DB83831E96864700CB1A50 /* Assets.xcassets in Resources */,
 				44DB83811E96864700CB1A50 /* Main.storyboard in Resources */,
 			);
@@ -167,7 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44DB837E1E96864700CB1A50 /* ViewController.m in Sources */,
+				440C06711E9CB42900CD4FDF /* monitorViewController.m in Sources */,
+				440C06761E9CB46800CD4FDF /* suggestViewController.m in Sources */,
 				44DB837B1E96864700CB1A50 /* AppDelegate.m in Sources */,
+				440C067B1E9CB4A500CD4FDF /* persionCenterViewController.m in Sources */,
 				44DB83781E96864700CB1A50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +355,7 @@
 				44DB838C1E96864700CB1A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

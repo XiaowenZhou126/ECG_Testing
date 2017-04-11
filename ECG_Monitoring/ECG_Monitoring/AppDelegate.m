@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "monitorViewController.h"
+#import "suggestViewController.h"
+#import "persionCenterViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //创建并初始化UITabBarController
+    UITabBarController *tabBarOfECG = [[UITabBarController alloc] init];
+    self.window.rootViewController = tabBarOfECG;
+    
+    //初始化4个视图的控制器
+    monitorViewController *monitorVC = [[monitorViewController alloc] init];
+    suggestViewController *suggestVC = [[suggestViewController alloc] init];
+    persionCenterViewController *aboutVC = [[persionCenterViewController alloc] init];
+    
+    //为4个视图控制器添加导航栏控制器
+    UINavigationController *monitorNav = [[UINavigationController alloc] initWithRootViewController:monitorVC];
+    UINavigationController *suggestNav = [[UINavigationController alloc] initWithRootViewController:suggestVC];
+    UINavigationController *aboutNav = [[UINavigationController alloc] initWithRootViewController:aboutVC];
+    //为导航栏控制器设置title、image
+    monitorNav.title = @"ECG Testing";
+    monitorNav.tabBarItem.image = [UIImage imageNamed:@"c1"];
+    suggestNav.title = @"Suggest";
+    suggestNav.tabBarItem.image = [UIImage imageNamed:@"c2"];
+    aboutNav.title = @"Persion Center";
+    aboutNav.tabBarItem.image = [UIImage imageNamed:@"c4"];
+    
+    //创建一个数组包含4个导航栏控制器
+    NSArray *navArray = [NSArray arrayWithObjects:monitorNav,suggestNav,aboutNav, nil];
+    
+    //将数组传递给tabBarOfECG
+    tabBarOfECG.viewControllers = navArray;
+    
+    self.window.backgroundColor = [UIColor redColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
