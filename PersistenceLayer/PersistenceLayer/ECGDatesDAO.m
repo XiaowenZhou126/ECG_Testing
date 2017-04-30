@@ -32,7 +32,7 @@ static ECGDatesDAO *manager = nil;
             sqlite3_bind_text(statement, 2, [model.data UTF8String], -1, NULL);
 
             if(sqlite3_step(statement) != SQLITE_DONE) {
-                char *error;
+                char *error = "";
                 NSAssert1(NO, @"insert fail:%s",error);
             }
         }
@@ -128,26 +128,27 @@ static ECGDatesDAO *manager = nil;
 }
 
 +(ECGDatesDAO *)sharedManager{
-    static dispatch_once_t once;
-    
-    dispatch_once(&once, ^{
-        manager = [[self alloc] init];
-        [manager createEditableCopyOfDatabaseIfNeeded];
-    });
-    
+    @synchronized(self) {
+        if (manager == nil){
+            manager = [[self alloc] init];
+            [manager createEditableCopyOfDatabaseIfNeeded];
+        }
+    }
+
     return manager;
 }
 
 -(void)createEditableCopyOfDatabaseIfNeeded{
     NSString *fileName = [self applicationDocumentsDirectoryPath];
     NSFileManager *fileManager = [NSFileManager defaultManager];
+    
     NSError *error;
     BOOL dbExits = [fileManager fileExistsAtPath:fileName];
     
     if(!dbExits){
         NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ECG_Testing.db"];
         dbExits = [fileManager copyItemAtPath:defaultDBPath toPath:fileName error:&error];
-        
+ 
         if(!dbExits){
             NSAssert1(0, @"Fail to create database file:'%@'.", [error localizedDescription]);
         }

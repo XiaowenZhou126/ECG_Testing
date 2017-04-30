@@ -146,12 +146,12 @@ static PersionInfoDAO *manager = nil;
 }
 
 +(PersionInfoDAO *)sharedManager{
-    static dispatch_once_t once;
-    
-    dispatch_once(&once, ^{
-        manager = [[self alloc] init];
-        [manager createEditableCopyOfDatabaseIfNeeded];
-    });
+    @synchronized(self) {
+        if (manager == nil){
+            manager = [[self alloc] init];
+            [manager createEditableCopyOfDatabaseIfNeeded];
+        }
+    }
     
     return manager;
 }
@@ -164,6 +164,7 @@ static PersionInfoDAO *manager = nil;
     
     if(!dbExits){
         NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"ECG_Testing.db"];
+        NSLog(@"defaultDB:%@",defaultDBPath);
         dbExits = [fileManager copyItemAtPath:defaultDBPath toPath:fileName error:&error];
         
         if(!dbExits){

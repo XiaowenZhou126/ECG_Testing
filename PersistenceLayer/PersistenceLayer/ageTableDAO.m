@@ -87,12 +87,12 @@ static AgeTableDAO *manager = nil;
 }
 
 +(AgeTableDAO *)sharedManager{
-    static dispatch_once_t once;
-    
-    dispatch_once(&once, ^{
-        manager = [[self alloc] init];
-        [manager createEditableCopyOfDatabaseIfNeeded];
-    });
+    @synchronized(self) {
+        if (manager == nil){
+            manager = [[self alloc] init];
+            [manager createEditableCopyOfDatabaseIfNeeded];
+        }
+    }
     
     return manager;
 }
